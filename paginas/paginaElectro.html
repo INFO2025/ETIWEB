@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Css-->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/electro.css">
+    <!--icono-->
+    <link rel="icon" type="image/x-icon" href="../Imagenes/escudo.png">
+    <title>Escuela Tecnica N°1</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="logoHeader">
+            <img src="../Imagenes/escudo.png" alt="Escudo de la Escuela Tecnica">
+            <div class="logoTexto"><a href="../index.html"><h3 class="tituloHeader" id="tituloHeader">Escuela Técnica N°1</h3></a></div>
+        </div>
+    <!--Navbar celular-->
+        <div class="buscadorContainer">
+            <button class="botonNav btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-list"></i></button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <a href="../index.html"><h5 class="offcanvas-title" id="offcanvasRightLabel">Inicio</h5></a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="contenedorNavCelu">
+                        <div class="contenedorBuscadorCelu">
+                            <input type="text" placeholder="Buscar..."> <button class="btnNavCelu" type="submit"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Institucional
+                            </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <a href="pagina_enproceso.html"><li>Autoridades</li></a>
+                                    <a href="pagina_enproceso.html"><li>Informacion administrativa</li></a>
+                                    <a href="pagina_enproceso.html"><li>Acuerdo de convivencia</li></a>
+                                    <a href="pagina_enproceso.html"><li>Profesores</li></a>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Egresados
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <a href="pagina_enproceso.html"><li>1970-1980</li></a>
+                                    <a href="pagina_enproceso.html"><li>1980-1990</li></a>
+                                    <a href="pagina_enproceso.html"><li>2000-2010</li></a>
+                                    <a href="pagina_enproceso.html"><li>2010-2020</li></a>
+                                    <a href="pagina_enproceso.html"><li>2020-2030</li></a>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Talleres del Ciclo Básico
+                            </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <a href="pagina_enproceso.html"><li>Hojalatería</li></a>
+                                    <a href="pagina_enproceso.html"><li>Carpintería</li></a>
+                                    <a href="pagina_enproceso.html"><li>Vitrofusión</li></a>
+                                    <a href="pagina_enproceso.html"><li>Herrería</li></a>
+                                    <a href="pagina_enproceso.html"><li>Fundición</li></a>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                <!--Aca va algo good-->
+                </div>
+                </div>
+            <input type="text" placeholder="Buscar..." class="buscador">
+        </div>
+        
+    </header>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Institucional
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <li><a class="dropdown-item" href="pagina_enproceso.html">Autoridades</a></li>
+                        <li><a class="dropdown-item" href="pagina_enproceso.html">Información Administrativa</a></li>
+                        <li><a class="dropdown-item" href="pagina_enproceso.html">Acuerdo de convivencia</a></li>
+                        <li><a class="dropdown-item" href="pagina_enproceso.html">Profesores</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Egresados
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <li><a class="dropdown-item" href="pagina_enproceso.html">1970-1980</a></li>
+                        <li><a class="dropdown-item" href="pagina_enproceso.html">1981-1990</a></li>
+                        <li><a class="dropdown-item" href="pagina_enproceso.html">1991-2000</a></li>
+                        <li><a class="dropdown-item" href="pagina_enproceso.html">2001-2010</a></li>
+                        <li><a class="dropdown-item" href="pagina_enproceso.html">2011-2020</a></li>
+                        <li><a class="dropdown-item" href="pagina_enproceso.html">2021-2030</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Talleres de Ciclo Básico 
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                        <li><a class="dropdown-item" href="pagina_enproceso.html">Hojalatería</a></li>
+                        <li><a class="dropdown-item" href="pagina_enproceso.html">Carpintería</a></li>
+                        <li><a class="dropdown-item" href="pagina_enproceso.html">Vitrofusión</a></li>
+                        <li><a class="dropdown-item" href="pagina_enproceso.html">Herrería</a></li>
+                        <li><a class="dropdown-item" href="pagina_enproceso.html">Fundición</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--main-->
+    <main>
+        <div class="contenedorIntro">
+            <h2>Division Electromecánica</h2>
+            <span><p>Bienvenido a la división electromecánica de la Escuela de Educación Secundaria Técnica N°1 Gral. Manuel Belgrano, objetivo principal de esta división es formar profesionales capacitados para diseñar, instalar, operar y mantener sistemas electromecánicos en una amplia gama de industrias, incluyendo manufactura, automotriz, energía renovable y más. Además, se enfatiza el desarrollo de habilidades interpersonales y de trabajo en equipo, esenciales para colaborar eficazmente en proyectos multidisciplinarios. Los programas de estudio en electromecánica abarcan desde la teoría básica de circuitos y máquinas eléctricas hasta el diseño y mantenimiento de sistemas mecánicos. Los estudiantes adquieren habilidades prácticas en el manejo de herramientas y equipos específicos, así como competencias en la resolución de problemas técnicos.</p></span>
+        </div>
+        <h3 class="materias">Materias Específicas</h3>
+        <div class="row justify-content-evenly ">
+            <div class="contenedorElectro col-10 col-sm-5 m-3">
+                <img src=" ../Imagenes/electro/Maquinas Electricas y Automatismo.jpg" alt="Imagen 1">
+                <div class="Electro">
+                    <h3>Máquinas Eléctricas y Automatismo</h3>
+                    <p>Proporciona a los estudiantes los conocimientos teóricos y prácticos necesarios para comprender, operar y mantener máquinas eléctricas, así como para diseñar y aplicar sistemas automatizados en diversos entornos industriales y comerciales.</p>
+                </div>
+            </div>
+            <div class="contenedorElectro col-10 col-sm-5 m-3">
+                <img src=" ../Imagenes/electro/Diseño y Procesamiento Mecanico.jpg" alt="Imagen 2">
+                <div class="Electro">
+                    <h3>Diseño y Procesamiento Mecánico</h3>
+                    <p>En esta materia se estudia el diseño y la manufactura de
+                    componentes mecánicos utilizando herramientas y técnicas
+                    de diseño asistido por ordenador y manufactura asistida por ordenador.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-evenly ">
+            <div class="contenedorElectro col-10 col-sm-5 m-3">
+                <img src=" ../Imagenes/electro/Laboratorio de Mediciones y de Control de Calidad.jpg" alt="Imagen 3">
+                <div class="Electro">
+                    <h3>Laboratorio de Mediciones y de Control de Calidad</h3>
+                    <p>Se centra en técnicas de medición y control de calidad en procesos
+                    industriales, incluyendo calibración de instrumentos, técnicas estadísticas
+                    y normativas de calidad.</p>
+                </div>
+            </div>
+            <div class="contenedorElectro col-10 col-sm-5 m-3">
+                <img src="../Imagenes/electro/Mantenimiento y Montaje Eléctrico.webp" alt="Imagen 4">
+                <div class="Electro">
+                    <h3>Mantenimiento y Montaje Eléctrico</h3>
+                    <p>Enfocado en el mantenimiento preventivo y correctivo de sistemas
+                    eléctricos, así como en técnicas de montaje de equipos y componentes eléctricos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-evenly ">
+            <div class="contenedorElectro col-10 col-sm-5 m-3">
+                <img src=" ../Imagenes/electro/Proyectos y Diseño de Instalaciones Eléctricas.jfif" alt="Imagen 5 m-3">
+                <div class="Electro">
+                    <h3>Proyectos y Diseño de Instalaciones Eléctricas</h3>
+                    <p>Estudio y desarrollo de proyectos de instalaciones eléctricas, incluyendo
+                    normativas, diseño de planos, selección de materiales y cálculos eléctricos.</p>
+                </div>
+            </div>
+            <div class="contenedorElectro col-10 col-sm-5 m-3">
+                <img src=" ../Imagenes/electro/Proyectos y Diseño Electromecánico.webp" alt="Imagen 6">
+                <div class="Electro">
+                    <h3>Proyectos y Diseño Electromecánico</h3>
+                    <p>Integración de componentes mecánicos y eléctricos en el diseño de sistemas
+                    electromecánicos, abarcando desde la conceptualización hasta la implementación de proyectos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-evenly ">
+            <div class="contenedorElectro col-10 col-sm-5 m-3">
+                <img src=" ../Imagenes/electro/Emprendimientos Productivos y de Desarrollo Industrial.jpg" alt="Imagen 7">
+                <div class="Electro">
+                    <h3>Emprendimientos Productivos y de Desarrollo Industrial</h3>
+                    <p>Se enfoca en la gestión y administración de proyectos industriales, así como
+                    en estrategias de emprendimiento dentro del sector electromecánico.</p>
+                </div>
+            </div>
+            <div class="contenedorElectro col-10 col-sm-5 m-3">
+                <img src=" ../Imagenes/electro/Práctica Profesional del Sector Electromecánico.jpg" alt="Imagen 8">
+                <div class="Electro">
+                    <h3>Práctica Profesional del Sector Electromecánico</h3>
+                    <p>Experiencia práctica en un entorno profesional relacionado con la orientación
+                    electromecánica, aplicando conocimientos teóricos adquiridos en situaciones reales.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-evenly ">
+            <div class="contenedorElectro col-10 col-sm-5 m-3">
+                <img src=" ../Imagenes/electro/Mediciones Electricas.jpeg" alt="Imagen 9">
+                <div class="Electro">
+                    <h3>Mediciones Eléctricas</h3>
+                    <p>Estudio de técnicas y métodos de medición eléctrica, incluyendo
+                    instrumentación, calibración de equipos y análisis de resultados.</p>
+                </div>
+            </div>
+            <div class="contenedorElectro col-10 col-sm-5 m-3">
+                <img src=" ../Imagenes/electro/Seguridad e Higiene.jpg" alt="Imagen 10">
+                <div class="Electro">
+                    <h3>Seguridad e Higiene</h3>
+                    <p>Normativas y prácticas de seguridad en entornos industriales, incluyendo
+                    prevención de riesgos laborales y normativas de higiene industrial.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-evenly ">
+            <div class="contenedorElectro col-10 col-sm-5 m-3">
+                <img src=" ../Imagenes/electro/Sistemas Mecánicos.jpg" alt="Imagen 11">
+                <div class="Electro">
+                    <h3>Sistemas Mecánicos</h3>
+                    <p>Estudio de sistemas mecánicos complejos, incluyendo su
+                    diseño, análisis de funcionamiento y optimización de componentes.</p>
+                </div>
+            </div>
+            <div class="contenedorElectro col-10 col-sm-5 m-3">
+                <img src=" ../Imagenes/electro/Electrónica Industrial.webp" alt="Imagen 11">
+                <div class="Electro">
+                    <h3>Electrónica Industrial</h3>
+                    <p>Aplicación de principios electrónicos en el control y automatización
+                    de procesos industriales, incluyendo el diseño y la implementación de
+                    circuitos y sistemas electrónicos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-evenly ">
+            <div class="contenedorElectro col-10 col-sm-5 m-3">
+                <img src=" ../Imagenes/electro/Instalación y Aplicación de la Energía.jpg" alt="Imagen 11">
+                <div class="Electro">
+                    <h3>Instalación y Aplicación de la Energía</h3>
+                    <p>Estudio de sistemas de generación, distribución y aplicación
+                    de energía eléctrica en diversos contextos industriales y comerciales.</p>
+                </div>
+            </div>
+            <div class="contenedorElectro col-10 col-sm-5 m-3">
+                <img src=" ../Imagenes/electro/Mecanica y Mecanismo.jpg" alt="Imagen 11">
+                <div class="Electro">
+                    <h3>Mecánica y Mecanismo</h3>
+                    <p>Estudio de principios mecánicos fundamentales y aplicados a la creación
+                    y análisis de mecanismos utilizados en sistemas electromecánicos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-evenly ">
+            <div class="contenedorElectro col-10 col-sm-5 m-3">
+                <img src=" ../Imagenes/electro/Resistencia y Enseñanza de los Materiales.jpg" alt="Imagen 11">
+                <div class="Electro">
+                    <h3>Resistencia y Enseñanza de los Materiales</h3>
+                    <p>Propiedades y comportamiento de los materiales utilizados en la construcción
+                    de componentes mecánicos y eléctricos, así como técnicas de enseñanza en este campo.</p>
+                </div>
+            </div>
+            <div class="contenedorElectro col-10 col-sm-5 m-3">
+                <img src=" ../Imagenes/electro/Electro Técnica y Electrónica.jpg" alt="Imagen 11">
+                <div class="Electro">
+                    <h3>Electrotecnia y Electrónica</h3>
+                    <p>Integra conocimientos de electricidad, electrónica y control, enfocándose
+                    en la aplicación práctica en sistemas electromecánicos.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Footer-->
+        <footer class="footer-links container-fluid">
+                <p class="footer-titulo" >
+                    Escuela de Educación Secundaria Técnica Nº1
+                </p>
+                <div class="footerCelu">
+                    <div class="d-flex justify-content-center row justify-content-evenly ">
+                        <ul class="footerCeluLista">
+                            <li><a href="pagina_enproceso.html">Ciclo Básico</a></li>
+                            <li class="footerCeluListaLi"><a href="pagina_enproceso.html">Ciclo Superior</a></li>
+                            <li class="footerCeluListaLi"><a href="pagina_enproceso.html">Horarios</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerCeluListaContactoContainer row justify-content-evenly ">
+                        <ul class="footerCeluListaContacto">
+                            <li class="redes">
+                                <button class="btn"><a href="https://www.instagram.com/escuela_tecnica_lasflores?igsh=MTlyc2o3em5nMGxmOQ" target="Instagram">
+                                <i class="bi bi-instagram"></i></a></button>
+                            </li>
+                            <li class="redes">
+                                <button class="btn"><a href="https://www.facebook.com/escuela.tecnica.3382/?locale=es_LA" target="Facebook  " title="Facebook">
+                                <i class="bi bi-facebook"></i></a></button>
+                            </li>
+                            <li class="redes">
+                                <button class="btn"><a href="https://maps.app.goo.gl/5tJBM67aSX5muiqz7" target="Ubicacion" title="Ubicacion">
+                                <i class="bi bi-geo-alt-fill"></i></a></button>
+                            </li>
+                            <li class="redes">
+                                <button class="btn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="eest1lasflores@abc.gob.ar"><i class="bi bi-envelope-at"></i></button>
+                            </li>
+                                <button class="btn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="2244 46-3626"><i class="bi bi-telephone"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer row justify-content-evenly "> 
+                    <div class="col-3 borde"> 
+                        <ul>
+                            <li class="redes">
+                                <button class="btn"><a href="https://www.instagram.com/escuela_tecnica_lasflores?igsh=MTlyc2o3em5nMGxmOQ" target="Instagram">
+                                    <i class="bi bi-instagram"></i></a></button>
+                                <br>
+                                <button class="btn"><a href="https://www.facebook.com/escuela.tecnica.3382/?locale=es_LA" target="Facebook  " title="Facebook">
+                                    <i class="bi bi-facebook"></i></a></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3 Informacion borde d-flex align-items-around justify-content-center">
+                        <ul>
+                            <li>
+                                <a href="pagina_enproceso.html">Ciclo Básico</a>
+                            </li>
+                            <li>
+                                <a href="pagina_enproceso.html">Ciclo Superior</a>
+                            </li>
+                            <li>
+                                <a href="pagina_enproceso.html">Clases y horarios</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3 Informacion borde d-flex align-items-around justify-content-center">
+                        <ul>
+                            <li>
+                                <a href="pagina_enproceso.html">Acuerdo de convivencia</a>
+                            </li>
+                            <li>
+                                <a href="pagina_enproceso.html">STOP ITS</a>
+                            </li>
+                            <li>
+                                <a href="pagina_enproceso.html">Feria de Ciencias</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3 borde">
+                        <ul>
+                            <li class="redes">
+                                <button class="btn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="eest1lasflores@abc.gob.ar"><i class="bi bi-envelope-at"></i></button>
+                                <br>
+                                <button class="btn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="2244 45-1212"><i class="bi bi-telephone"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
+                <p class="copyright" id="copyright">© 2024 Escuela de Educación Secundaria Técnica Nº1 | Av. Avellaneda 687, Las Flores, Prov. de Buenos Aires, Argentina</p>
+            </footer>
+            <!--Scripts-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+            <script>
+            var popoverTriggerList=[].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList=popoverTriggerList.map(function(popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl)
+            })
+            </script>
+            <script src="../java/titulo.js"></script>
+</body>
